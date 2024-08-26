@@ -1,0 +1,72 @@
+#include <iostream>
+using namespace std;
+
+void kmToMile() {
+    float value;
+    cout << "Enter Value: ";
+    cin >> value;
+    cout << value << " Km = " << value * 0.621371 << " Mile" << endl;
+}
+
+void inchToFoot() {
+    float value;
+    cout << "Enter Value: ";
+    cin >> value;
+    cout << value << " Inch = " << value * 0.0833333 << " Foot" << endl;
+}
+
+void cmToInch() {
+    float value;
+    cout << "Enter Value: ";
+    cin >> value;
+    cout << value << " Cm = " << value * 0.393701 << " Inch" << endl;
+}
+
+void poundToKg() {
+    float value;
+    cout << "Enter Value: ";
+    cin >> value;
+    cout << value << " Pound = " << value * 0.453592 << " Kg" << endl;
+}
+
+void inchToMeter() {
+    float value;
+    cout << "Enter Value: ";
+    cin >> value;
+    cout << value << " Inch = " << value * 0.0254 << " Meter" << endl;
+}
+
+int main() {
+    int input;
+
+    while (true) {
+        cout << "================================================================================" << endl;
+        cout << "1->KM to Mile\n2->Inch to Foot\n3->Cm to Inch\n4->Pound to Kg\n5->Inch to Meter\n6->Quit" << endl;
+        cout << "================================================================================" << endl;
+        cout << "Enter your choice: ";
+        cin >> input;
+
+        switch (input) {
+            case 1:
+                kmToMile();
+                break;
+            case 2:
+                inchToFoot();
+                break;
+            case 3:
+                cmToInch();
+                break;
+            case 4:
+                poundToKg();
+                break;
+            case 5:
+                inchToMeter();
+                break;
+            case 6:
+                cout << "Thank You" << endl;
+                return 0;
+            default:
+                cout << "Invalid Input" << endl;
+        }
+    }
+}
